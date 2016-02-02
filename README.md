@@ -1,6 +1,7 @@
 # Week 3
 
 *As always: make a copy of this repository to commit changes to*
+*ALSO now the homework is just labs 1 and 2*4
 
 ## Class Outline
 

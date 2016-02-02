@@ -14,7 +14,7 @@
 
   /* =====================
 
-  # Lab 2, Part 4 — (Optional, stretch goal)
+  # Lab 2, Part 4 — (Optional, stretch goal) 
 
   ## Introduction
 
