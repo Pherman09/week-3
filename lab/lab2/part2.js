@@ -22,31 +22,18 @@ underscore notation for a loop that lists a number for every element of an Array
 _each(restaurants, function(value)){
 console.log(value);
 }
+
+For Week 3, Lab 2, are we being asked to rewrite two entire previous labs, or merely parts of previous labs? Or did you mean just two loops?
+By that I mean, need we rewrite the entire Week 2 Lab 1, or is just Lab 1 Part 2-Fizzbuzz accepable?
+
+
 ===================== */
 
+//Week 1 Lab 2- FizzBuzz Loop
 var testArray1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-var EmptyArray = [];
 
-_.each(testArray1, function(value){
-    if (value % 3 === 0 && value % 5 === 0) {
-      EmptyArray.push("FizzBuzz");
-    } else if (value % 3 === 0) {
-      EmptyArray.push("Fizz");
-    } else if (value % 5 === 0){
-      EmptyArray.push("Buzz");
-    }
-    else {
-      EmptyArray.push(value);
-    }
-  }
-);
-
-console.log(EmptyArray);
-//WHERE I WAS
-
-var testArray2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-var EmptyArray2 = [];
-var FBFunc = function (testArray, newArray){
+var FBFunc = function (testArray){
+  var newArray = [];
   _.each(testArray, function(value){
     if (value % 3 === 0 && value % 5 === 0) {
       newArray.push("FizzBuzz");
@@ -59,24 +46,22 @@ var FBFunc = function (testArray, newArray){
       newArray.push(value);
     }
   });
+  return newArray;
 };
 
-FBFunc(testArray2,EmptyArray2);
-console.log(EmptyArray2);
+console.log(FBFunc(testArray1));
 
-/*
-var masterArray = [];
-var FizzBuzz1 = function (array) {}
-  for (var i=1; i<101; i++){
-    if ((i % 3 == 0) && (i % 5 == 0)){
-      masterArray.push("FizzBuzz");
-    } else if (i % 5 == 0) {
-      masterArray.push("Buzz");
-    } else if (i % 3 == 0) {
-      masterArray.push("Fizz");
-    } else {
-    masterArray.push(i);
+//Week 3 Lab 2- FIlter Less than 10 Loop
+var testArray2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+var filterOutLessThan10 = function (testArray){
+  var over10list = [];
+  _.each(testArray,function(value){
+    if (value >10){
+      over10list.push(value);
     }
-  }
+  });
+  return over10list;
 };
-*/
+
+console.log(filterOutLessThan10(testArray2));
